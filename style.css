@@ -1,0 +1,56 @@
+/*navbar brand font*/
+
+.navbar-brand {
+  font-weight: bold;
+  font-family: Mogra, serif;
+}
+
+/*navbar dropdown font*/
+
+.navbar-light .navbar-nav>li {
+  font-family: "Strait";
+}
+
+.nav-pills .pill-1 .nav-link {
+  background-color: #e3f2fd;
+  color: black;
+}
+
+.nav-pills .pill-2 .nav-link {
+  background-color: #e3f2fd;
+  color: black;
+}
+
+.nav-pills .pill-3 .nav-link {
+  background-color: #e3f2fd;
+  color: black;
+}
+
+.nav-pills .pill-4 .nav-link {
+  background-color: #e3f2fd;
+  color: black;
+}
+
+.mogra {
+  font-family: "Mogra";
+}
+
+.brandfont {
+  font-size: 32px;
+  text-decoration: underline;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+  font-family: "Strait";
+  font-size: 28px;
+  text-decoration: italic;
+}
+
+.body-background{
+  background: lightsalmon;
+}

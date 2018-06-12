@@ -20,7 +20,7 @@ function gameIntro() {
 
 function firstDown (playerName, diceRandomNumber, randomSixSided, failSixSided, playResult) {
 	let playSelection;
-	playSelection = prompt(""+ playerName +"...FIRST DOWN!!!, Which play would you like to run (Short Run: Enter 1, Medium Run: Enter 2, Long Run: Enter 3, Short Pass: Enter 4, Medium Pass: Enter 5, Long Pass: Enter 6)");
+	playSelection = prompt(""+ playerName +"... FIRST DOWN!!!, Which play would you like to run...  {Short Run: Enter 1, Medium Run: Enter 2, Long Run: Enter 3, Short Pass: Enter 4, Medium Pass: Enter 5, Long Pass: Enter 6}");
 	let resultOne;
 	let resultTwo;
 	let resultThree;
@@ -99,7 +99,7 @@ function firstDown (playerName, diceRandomNumber, randomSixSided, failSixSided, 
 
 function secondDown (playerName, diceRandomNumber, yardsToTouchdown) {
 	let playSelection;
-	playSelection = prompt(""+ playerName +"... Second down! Which play would you like to run (Short Run: Enter 1, Medium Run: Enter 2, Long Run: Enter 3, Short Pass: Enter 4, Medium Pass: Enter 5, Long Pass: Enter 6)");
+	playSelection = prompt(""+ playerName +"...... SECOND DOWN!!!, Which play would you like to run...  {Short Run: Enter 1, Medium Run: Enter 2, Long Run: Enter 3, Short Pass: Enter 4, Medium Pass: Enter 5, Long Pass: Enter 6}");
 	let resultOne;
 	let resultTwo;
 	let resultThree;
@@ -180,13 +180,14 @@ function secondDown (playerName, diceRandomNumber, yardsToTouchdown) {
 
 function thirdDown (playerName, diceRandomNumber, yardsToTouchdown, secondYardsToTouchdown) {
 	let playSelection;
-	playSelection = prompt(""+ playerName +"... Final play, fourth down! Which play would you like to run (Short Run: Enter 1, Medium Run: Enter 2, Long Run: Enter 3, Short Pass: Enter 4, Medium Pass: Enter 5, Long Pass: Enter 6)");
+	playSelection = prompt(""+ playerName +"THIRD DOWN!!!, Which play would you like to run...  {Short Run: Enter 1, Medium Run: Enter 2, Long Run: Enter 3, Short Pass: Enter 4, Medium Pass: Enter 5, Long Pass: Enter 6}");
 	let resultOne;
 	let resultTwo;
 	let resultThree;
 	let resultFour;
 	let resultFive;
-	let resultSix;
+	let resultSix;2
+
 	switch (true) {
 		case playSelection === "1":
 			resultOne = rollDie(6);
@@ -261,7 +262,7 @@ function thirdDown (playerName, diceRandomNumber, yardsToTouchdown, secondYardsT
 
 function fourthDown (playerName, diceRandomNumber, yardsToTouchdown, secondYardsToTouchdown, thirdYardsToTouchdown) {
 	let playSelection;
-	playSelection = prompt(""+ playerName +"... Third down! Which play would you like to run (Short Run: Enter 1, Medium Run: Enter 2, Long Run: Enter 3, Short Pass: Enter 4, Medium Pass: Enter 5, Long Pass: Enter 6)");
+	playSelection = prompt(""+ playerName +"... FINAL PLAY... FOURTH DOWN!... Which play would you like to run (Short Run: Enter 1, Medium Run: Enter 2, Long Run: Enter 3, Short Pass: Enter 4, Medium Pass: Enter 5, Long Pass: Enter 6)");
 	let resultOne;
 	let resultTwo;
 	let resultThree;
