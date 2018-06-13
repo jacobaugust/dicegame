@@ -1,31 +1,18 @@
-/*let playForLoss = Math.floor(Math.random() * (0 - -4) + -4);
-let shortRunGain = Math.floor(Math.random() * (4 - 1) + 1); 
-let medRunGain = Math.floor(Math.random() * (7 - 5) + 5);
-let longRunGain = Math.floor(Math.random() * (15 - 7) + 7);
-let shortPassGain = Math.floor(Math.random() * (6 - 4) + 4);
-let medPassGain = Math.floor(Math.random() * (12 - 7) + 7);
-let longPassGain = Math.floor(Math.random() * (20 - 13) + 13);
-*/
-
 function gameIntro() {
 	//result variable
 	
 	let diceRandomNumber;
 	//intro
-	alert("Welcome to the Red Zone Challenge... [Instructions: You have four downs to score a TD in the Redzone... Pick your play and best of luck!]");
+	alert("Welcome to the Red Zone Challenge...\n\nInstructions:\nYou have four downs to score a TD in the Redzone...\nYou will have six play options...\nFrom the easiest short run to the hardest long pass...\nPick your play wisely\nMay the football gods be in your favor!");
 	//sides of dice determined
 	let playerName;
 	playerName = prompt("What is your name?");
 	firstDown (playerName, diceRandomNumber);
-	}
+}
 
 function firstDown (playerName, diceRandomNumber, playResult) {
 	let playSelection;
-	function firstDownImg() {
-    document.body.style.backgroundColor = "#f3f3f3";
-    document.body.style.backgroundImage = "url('https://i.imgur.com/oUiFljC.jpg')";
-}
-	playSelection = prompt(""+ playerName +"... FIRST DOWN!!!, Which play would you like to run...  {Short Run: Enter 1, Medium Run: Enter 2, Long Run: Enter 3, Short Pass: Enter 4, Medium Pass: Enter 5, Long Pass: Enter 6}");
+	playSelection = prompt(""+ playerName +"... FIRST DOWN!!!\n\n Which play would you like to run...\n\n  Short Run: Enter 1\n Medium Run: Enter 2\n Long Run: Enter 3\n Short Pass: Enter 4\n Medium Pass: Enter 5\n Long Pass: Enter 6");
 	let resultOne;
 	let resultTwo;
 	let resultThree;
@@ -52,14 +39,14 @@ function firstDown (playerName, diceRandomNumber, playResult) {
 		    playResult= checkResultSix();
 		    break;
 		default: 
-		alert("What are you doing guy!");
+		alert("What are you doing guy?!?");
 			break;						
 	}
 
 	
-	alert(playResult + "yards");
-
-	let yardsToTouchdown = 20 - playResult;
+	alert(playResult + " yards");
+	let redZoneYards = 20;
+	let yardsToTouchdown = redZoneYards - playResult;
 
 	alert(""+ playerName +"... You have "+ yardsToTouchdown +" yards to a TD!");
 
@@ -68,7 +55,7 @@ function firstDown (playerName, diceRandomNumber, playResult) {
 
 function secondDown (playerName, diceRandomNumber, yardsToTouchdown, playResult) {
 	let playSelection;
-	playSelection = prompt(""+ playerName +"...... SECOND DOWN!!!, Which play would you like to run...  {Short Run: Enter 1, Medium Run: Enter 2, Long Run: Enter 3, Short Pass: Enter 4, Medium Pass: Enter 5, Long Pass: Enter 6}");
+	playSelection = prompt(""+ playerName +"... SECOND DOWN!!!\n \n Which play would you like to run...\n\n  Short Run: Enter 1\n Medium Run: Enter 2\n Long Run: Enter 3\n Short Pass: Enter 4\n Medium Pass: Enter 5\n Long Pass: Enter 6");
 	let resultOne;
 	let resultTwo;
 	let resultThree;
@@ -95,7 +82,7 @@ function secondDown (playerName, diceRandomNumber, yardsToTouchdown, playResult)
 		    playResult= checkResultSix();
 		    break;
 		default: 
-		alert("What are you doing guy!");
+		alert("What are you doing guy?!?");
 			break;											
 	}
 
@@ -105,7 +92,7 @@ function secondDown (playerName, diceRandomNumber, yardsToTouchdown, playResult)
 	 	alert("TOUCHDOWN!!!");
 	}
 	else {
-	alert(playResult + "yards");
+	alert(playResult + " yards");
 	alert(""+ playerName +"... You have "+ secondYardsToTouchdown +" yards to a TD!");
 	thirdDown (playerName, diceRandomNumber, yardsToTouchdown, secondYardsToTouchdown);
 	}
@@ -113,7 +100,7 @@ function secondDown (playerName, diceRandomNumber, yardsToTouchdown, playResult)
 
 function thirdDown (playerName, diceRandomNumber, yardsToTouchdown, secondYardsToTouchdown, playResult) {
 	let playSelection;
-	playSelection = prompt(""+ playerName +"THIRD DOWN!!!, Which play would you like to run...  {Short Run: Enter 1, Medium Run: Enter 2, Long Run: Enter 3, Short Pass: Enter 4, Medium Pass: Enter 5, Long Pass: Enter 6}");
+	playSelection = prompt(""+ playerName +"... THIRD DOWN!!!,\n \n Which play would you like to run...\n\n  Short Run: Enter 1\n Medium Run: Enter 2\n Long Run: Enter 3\n Short Pass: Enter 4\n Medium Pass: Enter 5\n Long Pass: Enter 6");
 	let resultOne;
 	let resultTwo;
 	let resultThree;
@@ -142,7 +129,7 @@ function thirdDown (playerName, diceRandomNumber, yardsToTouchdown, secondYardsT
 		    playResult= checkResultSix();
 		    break;
 		default: 
-		alert("What are you doing guy!");
+		alert("What are you doing guy?!?");
 			break;			
 	}
 
@@ -152,7 +139,7 @@ function thirdDown (playerName, diceRandomNumber, yardsToTouchdown, secondYardsT
 	 	alert("TOUCHDOWN!!!");
 	}
 	else {
-	alert(playResult + "yards");
+	alert(playResult + " yards");
 	alert(""+ playerName +"... You have "+ thirdYardsToTouchdown +" yards to a TD!");
 
 	fourthDown (playerName, diceRandomNumber, yardsToTouchdown, secondYardsToTouchdown, thirdYardsToTouchdown);
@@ -161,7 +148,7 @@ function thirdDown (playerName, diceRandomNumber, yardsToTouchdown, secondYardsT
 
 function fourthDown (playerName, diceRandomNumber, yardsToTouchdown, secondYardsToTouchdown, thirdYardsToTouchdown, playResult) {
 	let playSelection;
-	playSelection = prompt(""+ playerName +"... FINAL PLAY... FOURTH DOWN!... Which play would you like to run (Short Run: Enter 1, Medium Run: Enter 2, Long Run: Enter 3, Short Pass: Enter 4, Medium Pass: Enter 5, Long Pass: Enter 6)");
+	playSelection = prompt(""+ playerName +"... FINAL PLAY... FOURTH DOWN!... \n \n Which play would you like to run...\n\n  Short Run: Enter 1\n Medium Run: Enter 2\n Long Run: Enter 3\n Short Pass: Enter 4\n Medium Pass: Enter 5\n Long Pass: Enter 6");
 	let resultOne;
 	let resultTwo;
 	let resultThree;
@@ -189,7 +176,7 @@ function fourthDown (playerName, diceRandomNumber, yardsToTouchdown, secondYards
 		    playResult= checkResultSix();
 		    break;
 		default: 
-		alert("What are you doing guy!");
+		alert("What are you doing guy?!?");
 			break;			
 	}
 
@@ -198,11 +185,11 @@ function fourthDown (playerName, diceRandomNumber, yardsToTouchdown, secondYards
 	 	alert("Coming through in the Clutch! TOUCHDOWN!!!");
 	}
 	else {
-	alert(playResult + "yards");
-	alert(""+ playerName +"...FAIL!!! You fell "+ thirdYardsToTouchdown +" short yards of a TD!");
+	alert(playResult + " yards");
+	alert(""+ playerName +"... FAIL!!! You fell "+ thirdYardsToTouchdown +" short yards of a TD!");
 	}
 
-	}
+}
 
 function checkResultOne(resultOne, shortRunGain, playForLoss) {
 	if (rollDie(6) > 1) {
@@ -292,7 +279,7 @@ function randomYardsPerPlayShortPass () {
 }
 
 function randomYardsPerPlayMedPass () {
-	let medPassGain = Math.floor(Math.random() * (6 - 4) + 4);
+	let medPassGain = Math.floor(Math.random() * (12 - 7) + 7);
 	return medPassGain;
 }
 

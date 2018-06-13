@@ -6,18 +6,9 @@
 }
 
 /*navbar dropdown font*/
-
+<!-- 
 .navbar-light .navbar-nav>li {
   font-family: "Strait";
-}
-
-
-.nav-pills .pill-1 .nav-link {
-  background-color: #e3f2fd;
-  color: black;
-  box-shadow: 0px -10px 20px -9px #095659;
-  position: relative;
-  border: 2px solid aliceblue;
 }
 
 .nav-pills .pill-2 .nav-link {
@@ -43,14 +34,14 @@
   position: relative;
   border: 2px solid aliceblue;
 }
-
+ -->
 
 .mogra {
   font-family: "Mogra";
 }
 
 .brandfont {
-  font-size: 32px;
+  font-size: 34px;
   text-decoration: underline;
 }
 
@@ -65,12 +56,35 @@
   text-decoration: italic;
 }
 
-.body-background{
-  background: lightsalmon;
-}
-
 .pic {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.boxshadow {
+width: auto;
+height: auto;
+background-color: #8B0000;
+position: relative;
+box-shadow: inset 0px 0px 35px 6px #FFFAFA, 
+            inset 0px 0px 200px 100px #CD5C5C;
+}
+
+.body-background{
+ width: auto;  
+ height: auto;  
+ background-color: lightsalmon;  
+ position: relative; 
+ box-shadow: inset 0px 0px 200px 100px #CD5C5C;
+}
+
+.border {
+  background-color: #e3f2fd;
+  color: black;
+  box-shadow: 0px -10px 20px -9px #095659;
+  position: relative;
+  transform: translate(0%, 0%);
+  border: none;
+  border-radius: 12px;
 }
