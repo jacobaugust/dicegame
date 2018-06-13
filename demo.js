@@ -21,6 +21,10 @@ function gameIntro() {
 
 function firstDown (playerName, diceRandomNumber, playResult) {
 	let playSelection;
+	function firstDownImg() {
+    document.body.style.backgroundColor = "#f3f3f3";
+    document.body.style.backgroundImage = "url('https://i.imgur.com/oUiFljC.jpg')";
+}
 	playSelection = prompt(""+ playerName +"... FIRST DOWN!!!, Which play would you like to run...  {Short Run: Enter 1, Medium Run: Enter 2, Long Run: Enter 3, Short Pass: Enter 4, Medium Pass: Enter 5, Long Pass: Enter 6}");
 	let resultOne;
 	let resultTwo;
@@ -298,9 +302,11 @@ function randomYardsPerPlayLongPass () {
 
 }
 
+
 function rollDie(playSelection) {
 	let diceRandomNumber;
 	diceRandomNumber = Math.ceil(Math.random() * (playSelection));
 	return diceRandomNumber;
 }
+
 gameIntro();
